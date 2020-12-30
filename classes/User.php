@@ -8,6 +8,7 @@ class User {
     private $userName;
     private $email;
     private $password;
+    private $tweets;
 
     /**
      * User constructor.

@@ -9,11 +9,28 @@
 </head>
 <body>
     <div class="navbar">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a>Explore</a></li>
-            <li><a href="profile.php">Profile</a></li>
-            <li><a href="upload.php">Piu</a></li>
-        </ul>
+        <div id="left-side">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a>Explore</a></li>
+
+                <li><a href="upload.php">Piu</a></li>
+            </ul>
+        </div>
+        <div id="right-side">
+            <ul>
+                <?php
+                if (isset($_SESSION)){
+                    echo "<li><a href='profile.php'>Profile</a></li>";
+                    echo "<li><a href='logout.php'>Logout</a></li>";
+                }
+                else{
+                    echo "<li><a href='login.php'>Login</a></li>";
+                    echo "<li><a href='signup.php'>Signup</a></li>";
+                }
+                ?>
+            </ul>
+
+        </div>
 
     </div>

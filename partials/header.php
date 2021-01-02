@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,9 +25,9 @@
         <div id="right-side">
             <ul>
                 <?php
-                if (isset($_SESSION)){
+                if (isset($_SESSION["id"])){
                     echo "<li><a href='profile.php'>Profile</a></li>";
-                    echo "<li><a href='logout.php'>Logout</a></li>";
+                    echo "<li><a href='includes/logout.inc.php'>Logout</a></li>";
                 }
                 else{
                     echo "<li><a href='login.php'>Login</a></li>";

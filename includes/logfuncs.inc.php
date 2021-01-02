@@ -43,27 +43,25 @@ function invalidPassword($password, $rptpassword){
 }
 
 function userExists($conn, $username, $email){
-    try {
-        $query = "SELECT * FROM `users` WHERE `username` = ? OR `email` = ?;";
 
-        $stmt = $conn->prepare($query);
+    $query = "SELECT * FROM `users` WHERE `username` = ? OR `email` = ?;";
 
-        $stmt->bind_param("ss", $username, $email);
+    $stmt = $conn->prepare($query);
 
-        $stmt->execute();
+    $stmt->bind_param("ss", $username, $email);
 
-        $result = $stmt->get_result();
+    $stmt->execute();
 
-        if ($row = mysqli_fetch_row($result)) {
-            return $row;
-        } else {
-            return false;
-        }
+    $result = $stmt->get_result();
 
+    print_r($result);
+
+    if ($row = mysqli_fetch_array($result)) {
+        return $row;
+    } else {
+        return false;
     }
-    catch (Exception $e){
-        exit($e->getMessage());
-    }
+
 }
 
 
@@ -75,7 +73,7 @@ function createUser($conn ,$name, $username, $email, $password){
 
     $hashedPass = password_hash($password, PASSWORD_DEFAULT);
 
-    $stmt-> bind_param("ssss", $name, $username, $email, $password);
+    $stmt-> bind_param("ssss", $name, $username, $email, $hashedPass);
 
     $stmt->execute();
     $stmt->close();
@@ -96,6 +94,8 @@ function login($conn, $username, $email, $password){
     }
 
     $hashedPassword = $row["password"];
+
+
     $checkPass = password_verify($password, $hashedPassword);
 
     if ($checkPass == false){
@@ -106,6 +106,8 @@ function login($conn, $username, $email, $password){
         session_start();
         $_SESSION["username"] = $username;
         $_SESSION["id"] = $row["id"];
+
+
         header("location:../index.php?error=none");
         exit();
     }

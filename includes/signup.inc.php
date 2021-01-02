@@ -35,7 +35,7 @@ if (invalidPassword($password, $rptpassword)){
     exit();
 }
 
-if (userExists($username, $email, $conn)){
+if (userExists( $conn, $username, $email)){
     header("location:signup.php?error=userExists");
     exit();
 }

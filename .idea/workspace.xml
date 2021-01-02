@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca41988f-8180-45db-882b-4b09ebae35b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/Piu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/db.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/logfuncs.inc.php" afterDir="false" />
+    <list default="true" id="ca41988f-8180-45db-882b-4b09ebae35b0" name="Default Changelist" comment="30/12/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/logfuncs.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/logfuncs.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/logout.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/logout.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../imageApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../piupiu_mvc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,7 +60,18 @@
       <workItem from="1609235407181" duration="2378000" />
       <workItem from="1609238445203" duration="2475000" />
       <workItem from="1609246034220" duration="8351000" />
+      <workItem from="1609318124591" duration="747000" />
+      <workItem from="1609318873482" duration="5085000" />
+      <workItem from="1609405128371" duration="65000" />
     </task>
+    <task id="LOCAL-00001" summary="30/12/2020">
+      <created>1609318174215</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609318174215</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +88,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="30/12/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="30/12/2020" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

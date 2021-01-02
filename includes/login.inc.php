@@ -11,6 +11,8 @@ if (!isset($conn)){
 $username = $_POST["username"];
 $password = $_POST["password"];
 
+
+
 if(emptyInput($username, $username, $password, $password, $username)){
     header("location:../signup.php?error=emptyInputs");
     exit();

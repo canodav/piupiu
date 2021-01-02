@@ -27,5 +27,8 @@ class User {
         $this->password = $password;
     }
 
+    public static function Signup(){
+
+    }
 
 }

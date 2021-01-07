@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca41988f-8180-45db-882b-4b09ebae35b0" name="Default Changelist" comment="30/12/2020">
+    <list default="true" id="ca41988f-8180-45db-882b-4b09ebae35b0" name="Default Changelist" comment="05/01/2021">
+      <change afterPath="$PROJECT_DIR$/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/uploadfuncs.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/logfuncs.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/logfuncs.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/logout.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/logout.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/db.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/uppost.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/uppost.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partials/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uppost.php" beforeDir="false" afterPath="$PROJECT_DIR$/uppost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="327a534c-be89-49f3-b0cd-d34eaed218f3" name="localhost" />
+    </servers>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="WAMP" />
   <component name="ProjectId" id="1mKHXwhskxN1Ng6cqlUP50xwEfQ" />
   <component name="ProjectViewState">
@@ -33,18 +39,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../piupiu_mvc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\piupiu" />
       <recent name="C:\wamp64\www\piupiu\classes" />
       <recent name="C:\wamp64\www\piupiu\includes" />
     </key>
@@ -63,6 +70,10 @@
       <workItem from="1609318124591" duration="747000" />
       <workItem from="1609318873482" duration="5085000" />
       <workItem from="1609405128371" duration="65000" />
+      <workItem from="1609577561471" duration="9132000" />
+      <workItem from="1609752649088" duration="5115000" />
+      <workItem from="1609776965587" duration="1999000" />
+      <workItem from="1609836934753" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="30/12/2020">
       <created>1609318174215</created>
@@ -71,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609318174215</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="02/01/2021">
+      <created>1609577805239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609577805239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,7 +109,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="30/12/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/12/2020" />
+    <MESSAGE value="02/01/2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="02/01/2021" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/classes/Posts.class.php</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

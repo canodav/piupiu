@@ -19,7 +19,7 @@ session_start();
                 <li><a href="index.php">Home</a></li>
                 <li><a>Explore</a></li>
 
-                <li><a href="upload.php">Piu</a></li>
+                <li><a href="uppost.php">Piu</a></li>
             </ul>
         </div>
         <div id="right-side">

@@ -31,4 +31,9 @@ class User {
 
     }
 
+    public static function getUserbyId(){
+
+
+    }
+
 }

@@ -3,9 +3,6 @@ include_once "partials/header.php";
 include_once "classes/Posts.class.php";
 include_once "classes/Users.class.php";
 
-$result = Users::getUserById(6);
-echo $result["name"];
-
 ?>
 
 <section class="pius-links">
